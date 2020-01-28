@@ -10,7 +10,7 @@ int main(int argc, const char * argv[]) {
         cout << "Windows x32" << endl;
     #elif defined __APPLE__
         cout << "MacOS" << endl;
-    #elif definied __linux__
+    #elif defined __linux__
         cout << "Linux" << endl;
     #endif
     cout << "Last compiled: " << __DATE__ << " " << __TIME__ << endl;
