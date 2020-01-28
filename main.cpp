@@ -4,8 +4,10 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     cout << "Current environment: ";
-    #ifdef _WIN32
-        cout << "Windows" << endl;
+    #if defined _WIN64
+        cout << "Windows x64" << endl;
+    #elif defined _WIN32
+        cout << "Windows x32" << endl;
     #elif defined __APPLE__
         cout << "MacOS" << endl;
     #elif definied __linux__
